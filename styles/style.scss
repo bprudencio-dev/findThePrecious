@@ -22,6 +22,7 @@ body {
   border: $thickness solid $color;
   border-radius: 80px;
   box-shadow: 0 0 10px rgba($color, 0.5);
+  margin: calc(#{$size}* -0.3);
 }
 
 nav {

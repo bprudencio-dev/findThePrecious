@@ -76,6 +76,7 @@ nav ul li {
   border: 2.1px solid goldenrod;
   border-radius: 80px;
   box-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
+  margin: calc(10.5px * -0.3);
 }
 .pleaseFindIt .sixRings .ring-2 {
   height: 21px;
@@ -83,6 +84,7 @@ nav ul li {
   border: 4.2px solid goldenrod;
   border-radius: 80px;
   box-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
+  margin: calc(21px * -0.3);
 }
 .pleaseFindIt .sixRings .ring-3 {
   height: 31.5px;
@@ -90,6 +92,7 @@ nav ul li {
   border: 6.3px solid goldenrod;
   border-radius: 80px;
   box-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
+  margin: calc(31.5px * -0.3);
 }
 .pleaseFindIt .sixRings .ring-4 {
   height: 42px;
@@ -97,6 +100,7 @@ nav ul li {
   border: 8.4px solid goldenrod;
   border-radius: 80px;
   box-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
+  margin: calc(42px * -0.3);
 }
 .pleaseFindIt .sixRings .ring-5 {
   height: 52.5px;
@@ -104,6 +108,7 @@ nav ul li {
   border: 10.5px solid goldenrod;
   border-radius: 80px;
   box-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
+  margin: calc(52.5px * -0.3);
 }
 .pleaseFindIt .sixRings .ring-6 {
   height: 63px;
@@ -111,6 +116,7 @@ nav ul li {
   border: 12.6px solid goldenrod;
   border-radius: 80px;
   box-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
+  margin: calc(63px * -0.3);
 }
 
 footer {
