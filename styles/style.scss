@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@mixin flexAndMargin($margin) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: $margin;
+}
+
+@mixin ring($size, $color) {
+  $thickness: $size * 0.2;
+  height: $size;
+  width: $size;
+  border: $thickness solid $color;
+  border-radius: 80px;
+  box-shadow: 0 0 10px rgba($color, 0.5);
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orange;
+  color: wheat;
+  padding: 10px;
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    & li {
+      margin-right: 100px;
+      font-size: larger;
+      list-style: none;
+    }
+  }
+}
+
+.myPrecious {
+  @include flexAndMargin(100px);
+  & .orangeRing {
+    width: 30px;
+    height: 30px;
+    border: 5px solid orange;
+    border-radius: 50px;
+    margin: 0 5px 0 5px;
+  }
+}
+
+.theOneRing {
+  @include flexAndMargin(100px);
+  & .bigRing {
+    width: 80px;
+    height: 80px;
+    border: 10px solid goldenrod;
+    border-radius: 50px;
+    margin: 0 10px 0 10px;
+  }
+}
+.pleaseFindIt {
+  @include flexAndMargin(50px);
+  flex-direction: column;
+  & .sixRings {
+    @include flexAndMargin(50px);
+    @for $i from 1 through 6 {
+      .ring-#{$i} {
+        @include ring(15px * ($i * 0.7), goldenrod);
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  padding: 30px;
+  background-color: orange;
+  color: wheat;
+  & li {
+    list-style: none;
+    margin-bottom: 5px;
+  }
+}
+
+// & .ring-1 {
+//   @include ring(50px, goldenrod);
+// }
+// & .ring-2 {
+//   @include ring(50px, goldenrod);
+// }
+// & .ring-3 {
+//   @include ring(50px, goldenrod);
+// }
+// & .ring-4 {
+//   @include ring(50px, goldenrod);
+// }
+// & .ring-5 {
+//   @include ring(50px, goldenrod);
+// }
+// & .ring-6 {
+//   @include ring(50px, goldenrod);
+// }
